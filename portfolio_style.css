@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/* リセット */
+body, div, img, ul, li, a, h1, p, time {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body	{
+	margin: 0;
+    background-color: #ffffff;
+    color: #707070;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+/* 共通パーツ */
+/* More ボタン */
+.more {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.more a {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 64px;
+    background-color: #ffffff;
+    color: #707070;
+    /* font-weight: bold; */
+    border: solid 1px #707070;
+    text-decoration: none;
+}
+
+/* ボタンの色の遷移 */
+.more a:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all  0.2s ease;
+    color: #ffffff;
+    background-color: #73c9cc;
+    border-color: #73c9cc;
+}
+
+/* サービス一覧と実績の画像 */
+.topics {
+    max-width: 908px;
+    /* max-width: 1071px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topics img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topics a:hover {
+    opacity: 0.8;
+}
+
+/* トップとヘッダー */
+.top {
+    position: relative;
+    height: 660px;
+    text-align: center;
+    background-image: url(img/topimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header li a {
+    display: block;
+    padding: 5px 22px;
+    color: #707070;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    opacity: 0.7;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0, 0.2);;
+}
+
+.header ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header li {
+    float: left;
+}
+
+/* ヘッダーの配置 */
+.header {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* サービス一覧 */
+.service {
+    text-align: center;
+}
+
+/* .service .topics {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} */
+
+.service .service_1  {
+    /* flex: 1; */
+    /* width: 32%; */
+    /* margin-right: 2%; */
+    margin-bottom: 20px;
+}
+
+.service .service_2  {
+    /* flex: 1; */
+    /* width: 32%; */
+    /* margin-right: 2%; */
+    margin-bottom: 20px;
+}
+
+.service .service_3  {
+    /* flex: 1; */
+    /* width: 32%; */
+    margin-bottom: 20px;
+}
+
+/* 実績 */
+.achievement {
+    text-align: center;
+    background-color: #DAEFF7;
+}
+
+/* .achievement .topics {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} */
+
+.achievement .achievement_1  {
+    /* flex: 1; */
+    /* width: 32%; */
+    /* margin-right: 2%; */
+    margin-bottom: 20px;
+}
+
+.achievement .achievement_2  {
+    /* flex: 1; */
+    /* width: 32%; */
+    /* margin-right: 2%; */
+    margin-bottom: 20px;
+}
+
+.achievement .achievement_3  {
+    /* flex: 1; */
+    /* width: 32%; */
+    margin-bottom: 20px;
+}
+
+/* ニュース */
+.news {
+    text-align: center;
+}
+
+.news ul {
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news li a {
+    display: block;
+    border-bottom: solid 1px #707070;
+    text-decoration: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.news li a:hover {
+    background-color: #f5f5f5;
+}
+
+.news time {
+    float: left;
+    /* width: 82px; */
+    line-height: 44px;
+    margin-right: 12px;
+    color: #707070;
+    font-size: 16px;
+}
+
+.news .tag {
+    float: left;
+    /* width: auto; */
+    margin-right: 40px;
+    color: #EDB43B;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: solid 2px #EDB43B;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.news .text {
+    float: none;
+    line-height: 44px;
+    color: #2C2C2C;
+    font-size: 16px;
+    text-align: left;
+}
+
+.news li a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 私たちについて */
+.aboutus {
+    text-align: center;
+    background-image: url(img/aboutus_bg.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.aboutus h1 {
+    padding-top: 60px;
+}
+
+.aboutus p {
+    padding-bottom: 20px;
+}
+
+.aboutus .overview {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* 採用情報 */
+.recruit {
+    text-align: center;
+}
+
+.recruit h1 {
+    padding-top: 60px;
+}
+
+.recruit p {
+    padding-bottom: 10px;
+}
+
+.recruit .button {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.button a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 3px 6px rgb(0, 0, 0, 0.3);
+    /* width: 100%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.button a:hover {
+    opacity: 0.8;
+
+}
+
+.button img {
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+}
+
+.button .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.button h1 {
+    font-size: 28px;
+}
+
+.button p {
+    font-size: 18px;
+}
+
+
+/* フッター */
+.footer {
+    text-align: center;
+    background-color: #E8E8E8;
+}
+
+.copyright p {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    color: #707070;
+    font-size: 14px;
+}
+
+
+/* 余白：左右 */
+.service, .achievement, .news, .aboutus .recruit {
+    padding-left: 104px;
+    padding-right: 104px;
+}
+
+/* ボックスの上下 */
+.service, .achievement, .news, .aboutus .recruit {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* ############# 767px以下 ############# */
+@media (max-width: 767px) {
+
+/* タイトル下の余白 (SP用) */
+.subtitle {
+    margin-bottom: 20px;
+}
+
+}
+
+/* ############# 768px以上 ############# */
+@media (min-width: 768px) {
+
+/* ボタンを横に並べる設定 */
+.service .topics {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service .service_1  {
+    flex: 1;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.service .service_2  {
+    flex: 1;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.service .service_3  {
+    flex: 1;
+    width: 32%;
+}
+
+.achievement .topics {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.achievement .achievement_1  {
+    flex: 1;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.achievement .achievement_2  {
+    flex: 1;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.achievement .achievement_3  {
+    flex: 1;
+    width: 32%;
+}
+
+.button {
+    display: flex;
+    max-width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new_graduate {
+    flex: 1;
+}
+
+.carrer {
+    flex: 1;
+}
+
+}
+
+/* ############# 1190px以上 ############# */
+@media (min-width: 1190px) {
+
+/* 全体の横幅を固定 */
+.header .service, .achievement, .news, .aboutus .recruit {
+    max-width: 1071px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+}
